@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart City | Open Data |  Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        .carousel-item{
+            height: 400px;
+            background-image: url("vender/1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logn{
+            width: 5%;
+            margin-left: 59px;
+        }
+        .logo{
+            background: #fff;
+            padding: 3px 20px;
+            box-shadow: 0 0 43px -7px black;
+            font-size: 25px;
+            border-radius: 16px;
+        }
+        .bg-light {
+            position: sticky;
+            top: 0;
+            z-index: 1200;
+            background-color: #40bdefd9 !important;
+            border-bottom: 3px solid#13110fc4;
+        }
+        ul.navbar-nav.mr-auto li a {
+            color: #000 !important;
+            transition: .9s;
+        }
+        ul.navbar-nav.mr-auto li a:hover {
+            color: #fff !important;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-slider
+        {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list
+        {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .slick-list:focus
+        {
+            outline: none;
+        }
+        .slick-list.dragging
+        {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list
+        {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track
+        {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        .slick-track:before,
+        .slick-track:after
+        {
+            display: table;
+            content: '';
+        }
+        .slick-track:after
+        {
+            clear: both;
+        }
+        .slick-loading .slick-track
+        {
+            visibility: hidden;
+        }
+
+        .slick-slide
+        {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+        [dir='rtl'] .slick-slide
+        {
+            float: right;
+        }
+        .slick-slide img
+        {
+            display: block;
+        }
+        .slick-slide.slick-loading img
+        {
+            display: none;
+        }
+        .slick-slide.dragging img
+        {
+            pointer-events: none;
+        }
+        .slick-initialized .slick-slide
+        {
+            display: block;
+        }
+        .slick-loading .slick-slide
+        {
+            visibility: hidden;
+        }
+        .slick-vertical .slick-slide
+        {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+        .module{
+            margin-top: 50px;
+        }
+        .itemBG{
+            background-image: linear-gradient(127deg, #1db2ed 0%, #5cc7f1d1 91%), url(vender/st.jpg);
+            padding: 4px;
+            margin-bottom: 0px;
+        }
+        .mdcolor{
+            color: #000;
+            font-size: 19px;
+            font-weight: 500;
+
+        }
+        .NewpW{
+            background: #eee;
+            padding: 50px 0;
+        }
+        .NewpW input.form-control{
+            position: relative;
+            margin-top: 14%;
+            border: 3px solid #5cc7f1d1;
+            padding: 18px;
+        }
+        .btn-primary {
+            background-color: #5cc7f1d1 !important;
+            color: #ffffff !important;
+            border-bottom: none !important;
+            border: navajowhite;
+            margin-top: 10px;
+            border-radius: 0;
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+        .cardcls{
+            width: 71%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo display-2" href="index.html">Open Data</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accessibility Statement <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Portal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#">
+                    Open Data Sites
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#">
+                    Policies
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#">
+                    Terms of Use
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Another action</a>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+
+            <input type="text" class="form-control" placeholder="Find the data you need........">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+        </form>
+       <img src="http://cdn.onlinewebfonts.com/svg/img_311846.png" class="logn" alt="logo">
+    </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h1 class="text-center text-white text-uppercase display-1" style="line-height: 2; background: #00000061; height: 400px; mix-blend-mode: darken;
+    font-weight: 700; font-size: 49px;"><span style="color: #5cc7f1 ;"> India </span>Smart City Mission Open Data Portal</h1>
+
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<section class="NewpW">
+
+    <div class="container">
+        <div class="display-3" style="padding: 25px 0;"><p>Data</p></div>
+        <div class="row">
+            <div class="col-md">
+                <img src="vender/new.svg" alt="new" class="img-risponsive new" width="50%">
+                <div class="NewpWContant text-justify">
+                    <h1>New Datasets</h1>
+                    <h6>View the most recently published datasets on the data catalog.</h6>
+                </div>
+            </div>
+            <div class="col-md">
+                <img src="vender/pd.svg" alt="new" class="img-risponsive new pd" width="50%">
+                <div class="NewpWContant text-justify">
+                    <h1> Popular Datasets</h1>
+                    <h6> View some of the most popular datasets on the data catalog.</h6>
+                </div>
+
+
+
+            </div>
+            <div class="col-md">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Smart City Open Data.......">
+                    <button class="btn btn-primary btn-lg" style="width: 100%;" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topCata">
+    <div class="container">
+        <p class="display-4" style="    padding: 20px;">How You Can Get Involved</p>
+        <div class="row">
+            <div class="col-md">
+                <img src="vender/1.svg">
+                <h3>New to Open Data</h3>
+                <p>Learn what data is and how to get started with our How To.</p>
+            </div>
+            <div class="col-md">
+                <img src="vender/2.svg">
+                <h3>Data Veterans</h3>
+                <p>View details on Open Data APIs and check status alerts.</p>
+            </div>
+            <div class="col-md">
+                <img src="vender/3.svg">
+                <h3>Get in Touch</h3>
+                <p>Ask a question, leave a comment, or suggest a dataset to the Smart City Mission team.</p>
+            </div>
+            <div class="col-md">
+                <img src="vender/4.svg">
+                <h3>Dive into the Data</h3>
+                <p>Already know what you’re looking for? Browse the data catalog now.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<div class="container module">
+    <P class="display-3 text-center" style="    margin-bottom: 49px;">EXPLORE</P>
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card cardcls">
+                <h4 class="card-title itemBG"><a href="#" class="mdcolor display-4">DATA VISUALIZATION</a></h4>
+                <img class="card-img-top img-fluid" src="vender/visulization.jpg" alt="Card image cap" style="border-bottom: 1px solid #eee;">
+                <div class="card-body">
+                    <h6 class="card-title">DATA VISUALIZATION</h6>
+                    <p class="card-text"> Discover Data Sets shown through various Visualisations and Graphical aids.
+                        Create your own graphs on selected Data Points.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="card cardcls">
+                <h4 class="card-title itemBG"><a href="catalog.html" class="mdcolor">CATALOGS</a></h4>
+                <img class="card-img-top img-fluid" src="vender/catalog.png" alt="Card image cap" style="border-bottom: 1px solid #eee;">
+                <div class="card-body">
+                    <h6 class="card-title">CATALOGS</h6>
+                    <p class="card-text" style="    margin-bottom: 46px;">View New Data Sets, Explore Featured Data Sets and Contribute New Data.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardcls">
+                <h4 class="card-title itemBG"><a href="map.html" class="mdcolor">MAP SERVICES</a></h4>
+                <img class="card-img-top img-fluid" src="vender/mp.png" alt="Card image cap" style="border-bottom: 1px solid #eee;">
+
+                <div class="card-body">
+                    <h6 class="card-title">MAP SERVICES</h6>
+                    <p class="card-text"> Explore Geospatial Data City Data Sets on Maps. Plot your Data Sets on Geospatial Coordinates on Maps. Explore Geo Tagged Trends. </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 70px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <div class="card cardcls">
+                <h4 class="card-title itemBG"><a href="community.html" class="mdcolor">COMMUNITY</a></h4>
+                <img class="card-img-top img-fluid" src="vender/cm.jpg" alt="Card image cap" style="border-bottom: 1px solid #eee;">
+                <div class="card-body">
+                    <h6 class="card-title">COMMUNITY </h6>
+                    <p class="card-text">Participate in Discussions. Submit your Data Sets and Visualization on Forum Threads. Read Expert Blogs and Start you own Discussion Threads.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card cardcls">
+                <h4 class="card-title itemBG"><a href="" class="mdcolor text-uppercase">Data Success Stories - Case Studies</a></h4>
+                <img class="card-img-top img-fluid" src="vender/blog.png" alt="Card image cap" style="border-bottom: 1px solid #eee;">
+                <div class="card-body">
+                    <h6 class="card-title">Data Success Stories - Case Studies</h6>
+                    <p class="card-text">Read about the City Success Stories. Initiatives that have used these the Smart City Open Data Sets to improve services on ground.</p>
+
+
+                </div>
+            </div>
+        </div>
+         <div class="col-md-1"></div>
+    </div>
+    <div class="card-columns">
+
+
+
+
+
+       <!--<div class="card">-->
+            <!--<ul class="list-group list-group-flush">-->
+                <!--<h4 class="card-title itemBG"><a href="#" class="mdcolor"> USER ANALYTICS</a></h4>-->
+                <!--<li class="list-group-item">243,306 RESOURCES</li>-->
+                <!--<li class="list-group-item">243,306 CATALOGS</li>-->
+                <!--<li class="list-group-item"> 142 DEPARTMENTS</li>-->
+                <!--<li class="list-group-item">  19.79 M TIMES VIEWED</li>-->
+                <!--<li class="list-group-item">  204 CHIEF DATA OFFICERS</li>-->
+                <!--<li class="list-group-item"> 8,449 APIs</li>-->
+                <!--<li class="list-group-item">1,540 VISUALIZATIONS</li>-->
+
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div class="card">-->
+            <!--<h4 class="card-title itemBG"><a href="catalog.html" class="mdcolor">SECTORS</a></h4>-->
+            <!--<img class="card-img-top img-fluid" src="vender/sector.jpg" alt="Card image cap">-->
+            <!--<div class="card-body">-->
+
+                <!--<p class="card-text">Consumption of Crude Oil, Natural Gas and Petroleum Products during 2010-11 to 2016-17</p>-->
+
+
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+
+        <!--<div class="card">-->
+            <!--<h4 class="card-title itemBG"><a href="" class="mdcolor">APPs GALLERY</a></h4>-->
+            <!--<img class="card-img-top img-fluid" src="vender/app.jpg" alt="Card image cap">-->
+            <!--<div class="card-body">-->
+                <!--<h6 class="card-title">APPs GALLERY</h6>-->
+                <!--<p class="card-text">Mandi Trades is a Location based F2S (Farm to Shop) Trading Platform for Agricultural Product. The App provides the daily Agricultural-->
+                    <!--Commodity Prices as updated by Open Government Data Platform India.</p>-->
+
+
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+
+
+</div>
+<!-- /.card-columns -->
+</div>
+<!-- /.container -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // executes when HTML-Document is loaded and DOM is ready
+        console.log("document is ready");
+
+
+// document ready
+    });
+
+
+    window.onload = function() {
+        // executes when complete page is fully loaded, including all frames, objects and images
+        console.log("window is loaded");
+
+
+// window load
+    };
+
+</script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
